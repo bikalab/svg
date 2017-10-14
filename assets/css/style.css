@@ -133,20 +133,20 @@ img{
 	display: none;
 }
 
-p.credits {
+p.buton {
 	margin-top: 50px;
     color: rgba(255, 255, 255, .8);
     text-align: center;
 }
-p.credits a{
+p.buton a{
 	color: #2bc7ba;
 	text-decoration: none;
 	border-bottom: dashed 1px #2bc7ba;
 }
-p.credits a:hover{
+p.buton a:hover{
 	border-bottom: none;
 }
-p.credits span{
+p.buton span{
 	color: #F26183;
 }
 
