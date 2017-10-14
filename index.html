@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+	<title>SVG Simge Boyutlandır & SVG'yi PNG'ye Dönüştür</title>
+	<meta name="description" content="SVG Simgelerinizi yeniden boyutlandırın ve PNG'ye Dönüştürün">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+	</head>
+<body>
+	<!--Logo-->
+	<h1>
+  <bikalab>
+  <a href="//bikalab.com" target="_blank" title="Bikalab">
+  <img class="logo" src="assets/img/bikalab.png"/>
+  </a>
+  </bikalab>
+  </h1>
+	<h2>SVG Simge Boyutlandır</h2>
+	<!--//Logo-->
+	<!--Dosya Yükleme Alanı-->
+	<div class="btn-wrapper">
+		<label class="btn" for="file_upload">SVG Yükleyin</label>
+		<input type="file" id="file_upload" accept=".svg">
+	</div>
+	<!--//Dosya Yükleme Alanı-->
+
+
+	<!--SVG Önizleme-->
+	<div class="preview" id="svg_preview"></div>
+	<!--//SVG Önizleme-->
+	<form id="svg_form">
+		<input type="number" id="resize_value" required placeholder="Yeni Boyutu (örn:49)">
+		<button type="button" onclick="playGround();exportResizedSvg();">Üret</button>
+	</form>
+	<div class="download-wrapper" id="download_wrapper">
+	<a href="data:" id="data" download="svg" class="download-png" target="_blank">PNG İndir</a>
+	</div>
+	<img src="" id="fromcanvas">
+	<script src="assets/js/svg_todataurl.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
